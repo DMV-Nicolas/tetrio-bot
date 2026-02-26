@@ -14,11 +14,11 @@ class Environment:
         self.columns = 10
 
         try:
-            with open("settings.json", "r") as f:
+            with open("dimensions.json", "r") as f:
                 self.monitor = load(f)
         except FileNotFoundError:
             print(
-                "ERROR: No se encontró 'settings.json'. Ejecuta 'generate_settings.py' primero."
+                "ERROR: No se encontró 'dimensions.json'. Ejecuta 'generate_dimensions.py' primero."
             )
             exit()
 

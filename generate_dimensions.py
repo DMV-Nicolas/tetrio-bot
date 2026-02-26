@@ -5,7 +5,7 @@ import json
 from time import sleep
 
 
-def generate_settings():
+def generate_dimensions():
     with mss.mss() as sct:
         monitor = sct.monitors[1]
         sct_img = sct.grab(monitor)
@@ -31,28 +31,23 @@ def generate_settings():
     cell_height = h / 20
 
     if w > 0 and h > 0:
-        settings = {
+        dimensions = {
             "top": int(y - cell_height * 2),
             "left": int(x),
             "width": int(w),
             "height": int(h + cell_height * 2),
         }
 
-        with open("settings.json", "w") as archivo_json:
-            json.dump(settings, archivo_json, indent=4)
-        print("¡Éxito! Configuración guardada en 'settings.json'.")
-        print(f"Valores guardados: {settings}")
+        with open("dimensions.json", "w") as archivo_json:
+            json.dump(dimensions, archivo_json, indent=4)
+        print("¡Éxito! Configuración guardada en 'dimensions.json'.")
+        print(f"Valores guardados: {dimensions}")
     else:
         print("Selección cancelada. No se guardó ningún archivo.")
 
 
-def set_window():
-    print("Cambia a la ventana de Tetrio! Se iniciará en 3 segundos...")
-    sleep(3)
-
-
-def look_settings():
-    with open("settings.json", "r") as f:
+def look_dimensions():
+    with open("dimensions.json", "r") as f:
         config = json.load(f)
     sct = mss.mss()
     monitor = config
@@ -69,6 +64,7 @@ def look_settings():
 
 
 if __name__ == "__main__":
-    set_window()
-    generate_settings()
-    look_settings()
+    print("Cambia a la ventana de Tetrio! Se iniciará en 3 segundos...")
+    sleep(3)
+    generate_dimensions()
+    look_dimensions()

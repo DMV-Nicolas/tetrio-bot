@@ -6,7 +6,7 @@ from agents.agent_avocado import AgentAvocado
 
 if __name__ == "__main__":
     env = Environment()
-    agent = AgentTest()
+    agent = AgentAvocado()
 
     print("¡El agente empezará en 3 segundos! Cambia a la ventana de Tetrio...")
     sleep(3)
