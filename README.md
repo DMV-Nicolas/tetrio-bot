@@ -3,6 +3,10 @@
 Bot para jugar al tetrio.\
 Este documento explica cómo instalarlo y usarlo en Linux.
 
+# Grupo Avocado - Introducción a los sistemas inteligentes
+Gabriel Andres Anzola Tachak (1000150107)
+Nicolas David Moreno Villanueva (1024480471)
+
 ------------------------------------------------------------------------
 
 ## 📦 Instalación (Linux)
