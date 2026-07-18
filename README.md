@@ -4,8 +4,8 @@ Bot para jugar al tetrio.\
 Este documento explica cómo instalarlo y usarlo en Linux.
 
 # Grupo Avocado - Introducción a los sistemas inteligentes
-Gabriel Andres Anzola Tachak (1000150107)<br>
-Nicolas David Moreno Villanueva (1024480471)
+- Gabriel Andres Anzola Tachak (1000150107)<br>
+- Nicolas David Moreno Villanueva (1024480471)
 
 ------------------------------------------------------------------------
 
